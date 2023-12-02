@@ -2,16 +2,36 @@ from data import data
 from pprint import pprint
 
 
-# INSTRUCTIONS
-# 1) Split the full name into two fields, first name and last name
-# 2) Convert the admin field to a boolean value
-# 3) Convert the id to an integer
-# 4) Keep the rest of the info the same
-# 5) Complete this in a function(s)
-# 6) Save the data into a new data structure: a list of dictionaries
-
-
 def clean_data(lst: list) -> list:
+    """
+        Cleans and transforms a list of dictionaries representing user data.
+
+        This function takes a list of dictionaries, where each dictionary contains
+        user information. It performs several transformations:
+        - Splits the 'name' field into 'firstname' and 'lastname'.
+        - Converts the 'id' field to an integer.
+        - Converts the 'admin' field to a boolean.
+        - Removes the original 'name' field from each dictionary.
+
+        The function operates on a copy of the input list to avoid modifying
+        the original data.
+
+        Parameters:
+        lst (list): A list of dictionaries to be cleaned. Each dictionary should have
+                    the keys 'name', 'id', and 'admin'.
+
+        Returns:
+        list: A new list of dictionaries with the cleaned and transformed data.
+
+        Example:
+        >>> data = [
+        ...     {'name': 'John Doe', 'id': '123', 'admin': 'False'},
+        ...     {'name': 'Jane Smith', 'id': '456', 'admin': 'True'}
+        ... ]
+        >>> clean_data(data)
+        [{'firstname': 'John', 'lastname': 'Doe', 'id': 123, 'admin': False},
+         {'firstname': 'Jane', 'lastname': 'Smith', 'id': 456, 'admin': True}]
+        """
     lst_to_be_cleaned = lst.copy()
     new_list = list()
     for dct in lst_to_be_cleaned:
