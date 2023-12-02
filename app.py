@@ -48,3 +48,5 @@ def clean_data(lst: list) -> list:
 
 if __name__ == "__main__":
     pprint(clean_data(data))
+    pprint(data)
+
