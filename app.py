@@ -1,14 +1,22 @@
 from data import data
 from pprint import pprint
 from copy import deepcopy
+import pep8
+import logging
+
+checker = pep8.Checker('app.py')
+checker.check_all()
+
+logging.basicConfig(filename='logfile.log', level=logging.DEBUG)
 
 
 def clean_data(lst: list) -> list:
     """
         Cleans and transforms a list of dictionaries representing user data.
 
-        This function takes a list of dictionaries, where each dictionary contains
-        user information. It performs several transformations:
+        This function takes a list of dictionaries, where each
+        dictionary contains user information.
+        It performs several tranformations:
         - Splits the 'name' field into 'firstname' and 'lastname'.
         - Converts the 'id' field to an integer.
         - Converts the 'admin' field to a boolean.
@@ -18,8 +26,8 @@ def clean_data(lst: list) -> list:
         the original data.
 
         Parameters:
-        lst (list): A list of dictionaries to be cleaned. Each dictionary should have
-                    the keys 'name', 'id', and 'admin'.
+        lst (list): A list of dictionaries to be cleaned. Each dictionary
+                    should have the keys 'name', 'id', and 'admin'.
 
         Returns:
         list: A new list of dictionaries with the cleaned and transformed data.
@@ -43,10 +51,10 @@ def clean_data(lst: list) -> list:
         dct['admin'] = bool(dct.get('admin'))
         del (dct['name'])
         new_list.append(dct)
-
+        logging.info(f"Dict is {dct}")
     return new_list
 
 
 if __name__ == "__main__":
     pprint(clean_data(data))
-    pprint(data)
+

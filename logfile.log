@@ -1,0 +1,10 @@
+INFO:root:Dict is {'email': 'we@afi.co', 'date_joined': '4/20/2048', 'admin': True, 'id': 36, 'firstname': 'Warren', 'lastname': 'Bates'}
+INFO:root:Dict is {'email': 'koz@ma.cf', 'date_joined': '2/2/2022', 'admin': True, 'id': 40, 'firstname': 'Edgar', 'lastname': 'Howell'}
+INFO:root:Dict is {'email': 'li@kifal.vi', 'date_joined': '6/12/2090', 'admin': True, 'id': 17, 'firstname': 'Benjamin', 'lastname': 'Newman'}
+INFO:root:Dict is {'email': 'unauli@suiju.gw', 'date_joined': '9/15/2022', 'admin': True, 'id': 71, 'firstname': 'Ray', 'lastname': 'Greer'}
+INFO:root:Dict is {'email': 'vi@cipu.io', 'date_joined': '1/19/2052', 'admin': True, 'id': 8, 'firstname': 'Ina', 'lastname': 'Goodman'}
+INFO:root:Dict is {'email': 'bannoj@jik.hm', 'date_joined': '10/16/2053', 'admin': True, 'id': 73, 'firstname': 'Irene', 'lastname': 'Larson'}
+INFO:root:Dict is {'email': 'kaf@wun.nr', 'date_joined': '8/27/2031', 'admin': True, 'id': 89, 'firstname': 'Florence', 'lastname': 'Olson'}
+INFO:root:Dict is {'email': 'imuahezu@ga.fo', 'date_joined': '9/10/2117', 'admin': True, 'id': 35, 'firstname': 'Madge', 'lastname': 'Edwards'}
+INFO:root:Dict is {'email': 'tagap@ulti.fm', 'date_joined': '4/20/2023', 'admin': True, 'id': 27, 'firstname': 'Lola', 'lastname': 'Griffin'}
+INFO:root:Dict is {'email': 'ku@oku.mg', 'date_joined': '6/1/2036', 'admin': True, 'id': 98, 'firstname': 'Bryan', 'lastname': 'Tate'}
