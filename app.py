@@ -2,6 +2,7 @@ from data import data
 from pprint import pprint
 from copy import deepcopy
 
+
 def clean_data(lst: list) -> list:
     """
         Cleans and transforms a list of dictionaries representing user data.
@@ -49,4 +50,3 @@ def clean_data(lst: list) -> list:
 if __name__ == "__main__":
     pprint(clean_data(data))
     pprint(data)
-
