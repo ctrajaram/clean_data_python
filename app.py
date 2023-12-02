@@ -1,6 +1,6 @@
 from data import data
 from pprint import pprint
-
+from copy import deepcopy
 
 def clean_data(lst: list) -> list:
     """
@@ -32,7 +32,7 @@ def clean_data(lst: list) -> list:
         [{'firstname': 'John', 'lastname': 'Doe', 'id': 123, 'admin': False},
          {'firstname': 'Jane', 'lastname': 'Smith', 'id': 456, 'admin': True}]
         """
-    lst_to_be_cleaned = lst.copy()
+    lst_to_be_cleaned = deepcopy(lst)
     new_list = list()
     for dct in lst_to_be_cleaned:
         first_name, last_name = dct.get('name').split()
